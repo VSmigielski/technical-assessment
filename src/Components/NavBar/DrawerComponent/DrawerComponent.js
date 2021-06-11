@@ -9,15 +9,18 @@ const DrawerComponent = () => {
         iconButtonContainer: {
           marginLeft: 'auto',
           color: 'white',
+          fontFamily: '"Montserrat", "Helvetica", "Arial", sans-serif',
         },
         account: {
             marginRight: '30px',
+            fontFamily: '"Montserrat", "Helvetica", "Arial", sans-serif',
             [theme.breakpoints.down('xs')]: {
                 display: 'none',
             },
         },
         search: {
             marginRight: '30px',
+            fontFamily: '"Montserrat", "Helvetica", "Arial", sans-serif',
             [theme.breakpoints.down('xs')]: {
                 marginRight: '10px',
             },
@@ -51,21 +54,21 @@ const DrawerComponent = () => {
             <List>
                 <ListItem button divider onClick={() => setOpenDrawer(false)}>
                     <ListItemIcon>
-                        <ListItemText>
+                        <ListItemText style={{fontFamily: '"Montserrat", "Helvetica", "Arial", sans-serif'}}>
                             Courses
                         </ListItemText>
                     </ListItemIcon>
                 </ListItem>
                 <ListItem button divider onClick={() => setOpenDrawer(false)}>
                     <ListItemIcon>
-                        <ListItemText>
+                        <ListItemText style={{fontFamily: '"Montserrat", "Helvetica", "Arial", sans-serif'}}> 
                             Who We Are
                         </ListItemText>
                     </ListItemIcon>
                 </ListItem>
                 <ListItem button divider onClick={() => setOpenDrawer(false)}>
                     <ListItemIcon>
-                        <ListItemText>
+                        <ListItemText style={{fontFamily: '"Montserrat", "Helvetica", "Arial", sans-serif'}}>
                             What We Do
                         </ListItemText>
                     </ListItemIcon>
@@ -85,7 +88,7 @@ const DrawerComponent = () => {
         </IconButton>
 
         <Menu style={{marginTop: '50px'}}id='menu' onClose={handleMenuClose} anchorEl={anchorEl} open={Boolean(anchorEl)} >
-            <MenuItem onClick={handleMenuClose} >Request</MenuItem>
+            <MenuItem onClick={handleMenuClose} style={{fontFamily: '"Montserrat", "Helvetica", "Arial", sans-serif'}}>Request</MenuItem>
         </Menu>
         </>
     )

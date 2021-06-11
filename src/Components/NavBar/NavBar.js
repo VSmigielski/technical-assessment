@@ -10,6 +10,7 @@ const useStyles = makeStyles(theme => ({
     container: {
         flexGrow: '1',
         marginRight: 'auto',
+        fontFamily: '"Montserrat", "Helvetica", "Arial", sans-serif',
     },
     toolBar: {
         padding: '20px',

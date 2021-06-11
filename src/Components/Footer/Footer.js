@@ -29,6 +29,7 @@ const Footer = () => {
         },
         contact: {
           marginRight: '20px',
+          fontFamily: '"Montserrat", "Helvetica", "Arial", sans-serif',
         }
       }));
 

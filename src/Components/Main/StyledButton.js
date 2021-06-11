@@ -7,6 +7,7 @@ const StyledButton = withStyles({
       border: 0,
       height: 61,
       width: '264px',
+      fontFamily: '"Montserrat", "Helvetica", "Arial", sans-serif',
     },
     label: {
       textTransform: 'capitalize',

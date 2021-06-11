@@ -7,13 +7,14 @@ import { Container } from '@material-ui/core'
 import Footer from './Components/Footer/Footer'
 import Main from './Components/Main/Main'
 import './utils/fonts.css'
-import './index.css'
+
+const font = "'Montserrat', sans-serif"; 
 
 const App = () => {
   return (
-    <ThemeProvider theme={theme} background='paper'>
+    <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Container className='App'>
+      <Container className='App' style={{fontFamily: font}}>
       <NavBar />
       <Main />
       </Container>

@@ -11,6 +11,7 @@ const Header = () => {
           color: 'white',
           borderBottomLeftRadius: '20px',
           borderBottomRightRadius: '20px',
+          fontFamily: '"Montserrat", "Helvetica", "Arial", sans-serif',
         },
       }));
 

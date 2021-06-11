@@ -13,8 +13,9 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: '700',
         marginTop: '20px',
         fontSize: '2.7rem',
+        fontFamily: '"Montserrat", "Helvetica", "Arial", sans-serif',
         [theme.breakpoints.down('sm')]: {
-            fontSize: '2rem',
+            fontSize: '1.8rem',
         },
     },
     header3: {
@@ -22,14 +23,16 @@ const useStyles = makeStyles((theme) => ({
         color: 'black',
         fontWeight: '700',
         fontSize: '2.3rem',
+        fontFamily: '"Montserrat", "Helvetica", "Arial", sans-serif',
         [theme.breakpoints.down('sm')]: {
-            fontSize: '1.7rem',
+            fontSize: '1.5rem',
         },
     },
     header5: {
         textAlign: 'center',
         color: 'black',
         paddingTop: '30px',
+        fontFamily: '"Montserrat", "Helvetica", "Arial", sans-serif',
         [theme.breakpoints.down('xs')]: {
             paddingTop: '15px',
         },
@@ -38,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
             paddingBottom: '15px',
         },
         [theme.breakpoints.down('sm')]: {
-            fontSize: '1.1rem',
+            fontSize: '.95rem',
         },
     },
     button: {
