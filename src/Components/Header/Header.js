@@ -6,6 +6,7 @@ const Header = () => {
         header: {  
           backgroundColor: 'rgb(30,51,60)',
           textAlign: 'center',
+          height: '45px',
           padding: '10px',
           color: 'white',
           borderBottomLeftRadius: '20px',

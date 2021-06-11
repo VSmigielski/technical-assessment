@@ -1,23 +1,51 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core'
+import linkedin from '../../images/LinkedIn-Icon.png'
+import facebook from '../../images/Facebook-Icon.png'
+import instagram from '../../images/Instagram-Icon.png'
+import footerup from '../../images/FooterUp-Icon.png'
+import chat from '../../images/Chat-Icon.png'
+import './Footer.css'
 
 const Footer = () => {
     const useStyles = makeStyles(theme => ({
-        footer: {  
-          backgroundColor: 'rgb(30,51,60)',
-          textAlign: 'center',
-          padding: '10px',
-          color: 'white',
-          borderTopLeftRadius: '20px',
-          borderTopRightRadius: '20px',
+        instagram: {
+          marginLeft: '20px',
+          padding: '5px',
         },
+        facebook: {
+          padding: '5px',
+        },
+        linkedin: {
+          padding: '5px',
+        },
+        footerup: {
+            marginLeft: 'auto',
+            padding: '5px',
+        },
+        chat: {
+          marginLeft: 'auto',
+          marginRight: '10px',
+        },
+        contact: {
+          marginRight: '20px',
+        }
       }));
 
       const classes = useStyles();
 
     return (
-        <footer className={classes.footer}>
-            " What's meant to be will find a way "
+        <footer>
+          <div className='d-flex'>
+            <img alt='Instagram logo' src={instagram} className={classes.instagram} />
+            <img alt='Facebook logo' src={facebook} className={classes.facebook} />
+            <img alt='LinkedIn logo' src={linkedin} className={classes.linkedin} />
+            <img alt='Footer Up Icon' src={footerup} className={classes.footerup} />
+            <img alt='Chat Icon' src={chat} className={classes.chat} />
+            <div className={classes.contact} >
+              Contact
+            </div>
+          </div>      
         </footer>
     )
 }

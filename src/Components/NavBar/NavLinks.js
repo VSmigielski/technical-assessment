@@ -6,23 +6,30 @@ const useStyles = makeStyles(theme => ({
         flexGrow: '1',
     },
     tabsItem: {
-        fontWeight: 'bold',
+        fontWeight: '900',
         color: 'black',
     },
   }));
 
 const NavLinks = () => {
-    const [value, setValue] = useState(0);
+    // const [value, setValue] = useState(0);
 
-    const handleClickTab = (e, newValue) => {
-        setValue(newValue);
-    }
+    // const handleClickTab = (e, newValue) => {
+    //     setValue(newValue);
+    // }
+    // <div className={classes.root}>
+    //         <Tabs onChange={handleClickTab} indicatorColor='secondary' value={value} centered>
+    //             <Tab disableRipple  label='Courses' className={classes.tabsItem}/>
+    //             <Tab disableRipple label='Who We Are' className={classes.tabsItem}/>
+    //             <Tab disableRipple label='What We Do' className={classes.tabsItem}/>
+    //         </Tabs>
+    // </div>
 
     const classes = useStyles();
 
     return (
         <div className={classes.root}>
-            <Tabs onChange={handleClickTab} indicatorColor='secondary' value={value} centered>
+            <Tabs centered>
                 <Tab disableRipple  label='Courses' className={classes.tabsItem}/>
                 <Tab disableRipple label='Who We Are' className={classes.tabsItem}/>
                 <Tab disableRipple label='What We Do' className={classes.tabsItem}/>

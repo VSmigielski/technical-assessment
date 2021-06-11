@@ -15,9 +15,11 @@ const useStyles = makeStyles(theme => ({
         marginRight: '5px',
     },
     search: {
+        marginTop: '6px',
         marginRight: '20px',
     },
     signin: {
+        marginTop: '6px',
         marginLeft: '5px',
         marginRight: '30px',
     },
@@ -42,19 +44,15 @@ const NavRight = () => {
                     <SearchIcon />
                 </div>
                 <div className={classes.signin}>
-                    <img alt="Sign-In Icon" src={icon} className={classes.icon}/>
+                    <img alt="Sign-In Icon" src={icon} className={classes.icon} />
                     Sign In
                 </div>
-                <Button aria-controls='menu' onClick={handleOpenMenu} variant='contained' color='secondary' className={classes.account}>
+                <Button aria-controls='menu' onClick={handleOpenMenu} variant='contained' color='secondary' className={classes.account} style={{justifyContent: 'center'}}>
                     Request Demo
                 </Button>
 
                 <Menu style={{marginTop: '50px'}}id='menu' onClose={handleMenuClose} anchorEl={anchorEl} open={Boolean(anchorEl)} >
-                    <MenuItem onClick={handleMenuClose} >My Account</MenuItem>
-                    <MenuItem onClick={handleMenuClose} >Exam Results</MenuItem>
-                    <MenuItem onClick={handleMenuClose} >Promotions</MenuItem>
-                    <MenuItem onClick={handleMenuClose} >Pending Fees</MenuItem>
-                    <MenuItem onClick={handleMenuClose} >Final Projects</MenuItem>
+                    <MenuItem onClick={handleMenuClose} >Request</MenuItem>
                 </Menu>
             </div>
         </div>

@@ -6,6 +6,12 @@ const NavLogo = () => {
     const useStyles = makeStyles(theme => ({
         logo: {
             marginLeft: '20px',
+            [theme.breakpoints.down('md')]: {
+                marginLeft: '5px',
+            },
+            [theme.breakpoints.down('sm')]: {
+                maxWidth: '80%',
+            },
         },
     }));
 
