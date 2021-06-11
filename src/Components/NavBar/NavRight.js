@@ -48,7 +48,7 @@ const NavRight = () => {
                     <img alt="Sign-In Icon" src={icon} className={classes.icon} />
                     Sign In
                 </div>
-                <Button aria-controls='menu' onClick={handleOpenMenu} variant='contained' color='secondary' className={classes.account} style={{justifyContent: 'center'}}>
+                <Button disableRipple aria-controls='menu' onClick={handleOpenMenu} variant='contained' color='secondary' className={classes.account} style={{justifyContent: 'center'}}>
                     Request Demo
                 </Button>
 

@@ -82,7 +82,7 @@ const DrawerComponent = () => {
             <div className={classes.search}>
                 <SearchIcon />
             </div>
-            <Button aria-controls='menu' onClick={handleOpenMenu} variant='contained' color='secondary' className={classes.account}>
+            <Button disableRipple aria-controls='menu' onClick={handleOpenMenu} variant='contained' color='secondary' className={classes.account}>
                 Request Demo
             </Button>
             <MenuIcon className={classes.menuIconToggle}/>
