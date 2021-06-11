@@ -13,7 +13,10 @@ const useStyles = makeStyles(theme => ({
         fontFamily: '"Montserrat", "Helvetica", "Arial", sans-serif',
     },
     toolBar: {
-        padding: '20px',
+        paddingTop: '20px',
+        paddingBottom: '10px',
+        paddingRight: '20px',
+        paddingLeft: '20px',
     },
   }));
 
