@@ -8,6 +8,7 @@ const useStyles = makeStyles(theme => ({
     tabsItem: {
         fontWeight: '900',
         color: 'black',
+        fontFamily: '"Montserrat", "Helvetica", "Arial", sans-serif',
     },
   }));
 

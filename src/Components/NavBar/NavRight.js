@@ -7,6 +7,7 @@ const useStyles = makeStyles(theme => ({
     account: {
       marginLeft: 'auto',
       marginRight: '20px',
+      fontFamily: '"Montserrat", "Helvetica", "Arial", sans-serif',
       '&:hover': {
         background: '#57BB71',
       },
