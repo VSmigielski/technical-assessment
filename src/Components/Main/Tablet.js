@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
         marginTop: '20px',
         fontSize: '2.7rem',
         fontFamily: '"Montserrat", "Helvetica", "Arial", sans-serif',
-        [theme.breakpoints.down('sm')]: {
+        [theme.breakpoints.down('xs')]: {
             fontSize: '1.8rem',
         },
     },
@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: '700',
         fontSize: '2.3rem',
         fontFamily: '"Montserrat", "Helvetica", "Arial", sans-serif',
-        [theme.breakpoints.down('sm')]: {
+        [theme.breakpoints.down('xs')]: {
             fontSize: '1.5rem',
         },
     },
@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('xs')]: {
             paddingBottom: '15px',
         },
-        [theme.breakpoints.down('sm')]: {
+        [theme.breakpoints.down('xs')]: {
             fontSize: '.95rem',
         },
     },
