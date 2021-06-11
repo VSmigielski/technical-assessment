@@ -19,6 +19,7 @@ const DrawerComponent = () => {
             },
         },
         search: {
+            marginTop: '6px',
             marginRight: '30px',
             fontFamily: '"Montserrat", "Helvetica", "Arial", sans-serif',
             [theme.breakpoints.down('xs')]: {
