@@ -33,7 +33,7 @@ const NavBar = () => {
     return (
         <>
         <Slide appear={false} direction='down' in={!trigger}>
-        <AppBar color='primary' elevation={0}>
+        <AppBar color='primary' elevation={0} style={{ background: 'transparent'}}>
                 <Header/>
                 <Toolbar className={classes.toolBar}>
                     <Typography>
