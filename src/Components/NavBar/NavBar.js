@@ -1,5 +1,5 @@
 import React from 'react'
-import { AppBar, makeStyles, Toolbar, Typography, useMediaQuery, useTheme } from '@material-ui/core'
+import { AppBar, makeStyles, Slide, Toolbar, Typography, useMediaQuery, useTheme, useScrollTrigger } from '@material-ui/core'
 import DrawerComponent from './DrawerComponent/DrawerComponent'
 import Header from '../Header/Header'
 import NavLinks from './NavLinks'
@@ -18,6 +18,8 @@ const useStyles = makeStyles(theme => ({
   }));
 
 const NavBar = () => {
+    const trigger = useScrollTrigger();
+    
     // Breakpoints
     const theme = useTheme();
 
@@ -27,7 +29,8 @@ const NavBar = () => {
 
     return (
         <>
-            <AppBar color='primary' elevation={0}>
+        <Slide appear={false} direction='down' in={!trigger}>
+        <AppBar color='primary' elevation={0}>
                 <Header/>
                 <Toolbar className={classes.toolBar}>
                     <Typography>
@@ -49,6 +52,7 @@ const NavBar = () => {
 
                 </Toolbar>
             </AppBar>
+        </Slide>
 
         </>
     )
