@@ -57,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
         display: 'block',
         margin: 'auto',
         maxWidth: '51%', 
-        minWidth: '30%',
+        minWidth: '300px',
         height: 'auto',
     }
   }));
