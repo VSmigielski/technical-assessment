@@ -27,7 +27,7 @@ const NavBar = () => {
 
     return (
         <>
-            <AppBar color='primary' elevation={0}>
+            <AppBar color='primary' elevation={0} position="fixed-top">
                 <Header/>
                 <Toolbar className={classes.toolBar}>
                     <Typography>
