@@ -1,17 +1,4 @@
-footer {
-    background-color: rgb(30,51,60);
-    text-align: center;
-    padding: 10px;
-    color: white;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 46px;
-}
 
-@media (max-width: 1275px) {
     footer {
         background-color: rgb(30,51,60);
         text-align: center;
@@ -24,7 +11,6 @@ footer {
         width: 100%;
         height: 46px;
         }
-}
 
 @media only screen and (max-width: 960px) {
     footer {
